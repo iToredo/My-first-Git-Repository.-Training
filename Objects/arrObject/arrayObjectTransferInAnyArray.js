@@ -20,3 +20,5 @@ const usersOnline = users.filter((person) => person.status === 'online');
 const usersNameOnline = usersOnline.map((uNames) => uNames.username).join(',');
     alert(`Сейчас в онлайне следующие пользователи: ${usersNameOnline}`);
 
+    
+
