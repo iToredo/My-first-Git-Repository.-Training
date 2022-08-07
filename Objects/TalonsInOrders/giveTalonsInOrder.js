@@ -11,12 +11,12 @@ const giveTalonsInOrder = ((patients, orders) => {
         orders.forEach((i) => {
             let findObj = patients.find(person => {
                 if (i === person.id) {
-                    return sortPatient.push(person)
+                    return sortPatient.push(person);
                 } 
             });
-            return findObj
+            return findObj;
         });
-    return sortPatient
+    return sortPatient;
 });
 
 const result = giveTalonsInOrder(people, ordersArr);
