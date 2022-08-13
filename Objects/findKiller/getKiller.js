@@ -13,7 +13,7 @@ Object.entries(suspectInfo).forEach((data) => {
 
 getKiller(
     {
-        'Sena':['David', 'Kyle', 'Lucas'],
+        'Sena': ['David', 'Kyle', 'Lucas'],
         'Seda': ['Jacob', 'Bill', 'Lucas'],
         'Jora': ['Lucy', 'Kyle'],
     },
