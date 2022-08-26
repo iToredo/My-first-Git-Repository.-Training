@@ -1,20 +1,21 @@
 const body = document.querySelector('body');
+// 1-й спосіб
 body.innerHTML = 
-`<form class="create-user-form"> 
-    <label>
-        Ім'я
-        <input type="text" name="userName" placeholder="Введіть ваше ім'я">
-    </label>
-    <label>
-        Пароль
-        <input type="password" name="password" placeholder="Вигадайте пароль">
-    </label>
-    <button type="submit">
-         Підтвердіть
-    </button>
-</form>`; 
-console.log(body.innerHTML);
-
+    `<form class="create-user-form"> 
+        <label>
+            Ім'я
+            <input type="text" name="userName" placeholder="Введіть ваше ім'я">
+        </label>
+        <label>
+            Пароль
+            <input type="password" name="password" placeholder="Вигадайте пароль">
+        </label>
+        <button type="submit">
+             Підтвердіть
+        </button>
+    </form>`; 
+console.log('1-й', body.innerHTML);
+// 2-й спосіб
 const createLabelWithInput = (content, name, type, placeholder) => {
     const labelInputContainer = document.createElement('label');
     labelInputContainer.textContent = content;
