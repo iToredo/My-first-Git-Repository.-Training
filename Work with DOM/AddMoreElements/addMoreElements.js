@@ -162,7 +162,29 @@ const itemDelete = tasksList.addEventListener('click', (event) => {
     })
 })
 
+// const taskItem = tasksList.querySelectorAll('.task-item');
+// const allButtons = document.querySelectorAll('button');
+let isDark = false;
 
+function chengeTheme (styleBg, colorItem, borderButton) {
+    document.body.style.background = styleBg;
+    tasksList.querySelectorAll('.task-item')    //
+        .forEach(item => item.style.color = colorItem);
+    document.querySelectorAll('button')         //
+        .forEach(button => button.style.border = borderButton);
+}
 
+window.addEventListener('keydown', (event) => {
+    const { key } = event;
 
-
+    if (key ==='Tab') {  
+        event.preventDefault();
+        isDark = !isDark
+        
+        if(isDark) {
+            chengeTheme('#24292E', '#ffffff', '1px solid #ffffff');
+        } else {
+            chengeTheme('initial', 'initial', 'none');
+            }
+    } 
+})
